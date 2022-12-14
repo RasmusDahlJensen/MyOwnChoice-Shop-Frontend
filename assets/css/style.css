@@ -26,9 +26,12 @@
 #loginModal {
   display: none;
   height: 175px;
+  width: 100%;
   background-color: black;
   color: white;
   padding: 0 0 0 5%;
+  z-index: 999;
+  position: absolute;
 }
 #loginModal p {
   font-size: 0.9rem;

@@ -1,9 +1,12 @@
 #loginModal {
 	display: none;
 	height: 175px;
+	width: 100%;
 	background-color: black;
 	color: white;
 	padding: 0 0 0 5%;
+	z-index: 999;
+	position: absolute;
 	p {
 		a {
 			color: rgb(246, 246, 134);
@@ -42,7 +45,6 @@
 }
 
 .label {
-	// font-family: f.$regFont;
 	font-size: 1.2rem;
 	font-weight: 100;
 }
