@@ -1,0 +1,23 @@
+@use "typography" as f;
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background-color: black;
+	h1 {
+		width: 50%;
+		color: white;
+		font: f.$headerFont;
+		font-size: 2rem;
+	}
+}
+
+.navButtons {
+	display: flex;
+	gap: 5%;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}

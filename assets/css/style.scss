@@ -1,0 +1,26 @@
+@use "typography" as f;
+@use "navbar";
+@use "modal";
+
+body {
+	margin: 0;
+}
+
+p,
+a {
+	font-family: f.$regFont;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: f.$titleFont;
+}
+
+//Media queries
+
+// @media screen and (min-width:1200px){...}
+
+// @media screen and (min-width:577px) and (max-width:900px){...}

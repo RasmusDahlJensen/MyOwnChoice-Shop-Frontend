@@ -34,6 +34,6 @@ fetch(endpoint)
 
 function contentRender(data) {
 	if (data.categoryId === 1) {
-        console.log(data);
-    }
+		// console.log(data);
+	}
 }

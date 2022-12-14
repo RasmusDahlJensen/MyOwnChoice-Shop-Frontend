@@ -1,0 +1,65 @@
+#loginModal {
+	display: none;
+	height: 175px;
+	background-color: black;
+	color: white;
+	padding: 0 0 0 5%;
+	p {
+		a {
+			color: rgb(246, 246, 134);
+			text-decoration: none;
+		}
+		font-size: 0.9rem;
+		font-weight: 100;
+	}
+}
+
+.formInput {
+	display: flex;
+	flex-direction: column;
+	input {
+		width: 150px;
+		height: 20px;
+	}
+}
+
+.formFlex {
+	display: flex;
+	gap: 25px;
+}
+
+.formButton {
+	display: flex;
+	align-items: flex-end;
+	button {
+		width: 75px;
+		height: 26px;
+		color: white;
+		background-color: #8ab5b8;
+		border-radius: 3px;
+		border: none;
+	}
+}
+
+.label {
+	// font-family: f.$regFont;
+	font-size: 1.2rem;
+	font-weight: 100;
+}
+
+//Keyframes
+@keyframes toptobottom {
+	from {
+		transform: translateY(-5%);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}
+
+.slideStart {
+	animation-name: toptobottom;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-out;
+}

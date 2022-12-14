@@ -5,8 +5,40 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>MyOwnChoice</title>
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
 		<script src="/assets/js/fetch.js" defer></script>
+		<script src="/assets/js/navButton.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<nav class="navbar">
+			<h1>MyOwnChoice</h1>
+			<div class="navButtons">
+				<div id="loginButton">Login</div>
+				<div id="dropdownButton">dropdown Menu</div>
+			</div>
+		</nav>
+		<div class="modals">
+			<div id="loginModal">
+				<form>
+					<div>
+						<div class="formInput">
+							<label for="username" class="label">Brugernavn</label>
+							<input type="text" id="username" />
+						</div>
+						<div class="formFlex">
+							<div class="formInput">
+								<label for="password" class="label">Kodeord</label>
+								<input type="password" id="username" />
+							</div>
+							<div class="formButton">
+								<button type="submit">login</button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<p><a href="#">Glemt password?</a></p>
+				<p><a href="#">Opret bruger</a></p>
+			</div>
+		</div>
+	</body>
 </html>
