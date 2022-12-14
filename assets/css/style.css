@@ -16,7 +16,7 @@
 
 .navButtons {
   display: flex;
-  gap: 5%;
+  gap: 10%;
   width: 50%;
   justify-content: center;
   align-items: center;
@@ -118,7 +118,7 @@ h6 {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 200, "opsz" 48;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
