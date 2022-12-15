@@ -10,3 +10,16 @@ loginModalButton.addEventListener("click", () => {
 		loginModal.classList.remove("slideStart");
 	}
 });
+
+const categoryButton = document.getElementById("dropdownButton");
+const categoryModal = document.getElementById("categoryModal");
+
+categoryButton.addEventListener("click", () => {
+	if (categoryModal.style.display === "none") {
+		categoryModal.style.display = "block";
+		categoryModal.classList.add("slideStart");
+	} else {
+		categoryModal.style.display = "none";
+		categoryModal.classList.remove("slideStart");
+	}
+});

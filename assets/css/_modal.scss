@@ -1,5 +1,6 @@
+@use "typography" as f;
+
 #loginModal {
-	display: none;
 	height: 175px;
 	width: 100%;
 	background-color: black;
@@ -57,6 +58,22 @@
 
 	to {
 		transform: translateY(0%);
+	}
+}
+
+#categoryModal {
+	height: 200px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	padding: 0 0 0 5%;
+	z-index: 999;
+	position: absolute;
+	li {
+		font-size: 1.5rem;
+		font-weight: 100;
+		font-family: f.$regFont;
+		padding-top: 5px;
 	}
 }
 
