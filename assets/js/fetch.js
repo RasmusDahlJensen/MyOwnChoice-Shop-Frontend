@@ -57,9 +57,11 @@ const renderBestSellers = (products) => {
 		bestSellersContainer.innerHTML += `
 		<div class="productCard">
 		<img src="${image}">
-		<h2>${name}</h2>
-		<div class="thumbnailDesc">${description}</div>
-		<div class="thumbnailPrice">Kr ${price}</div>
+			<h2>${name}</h2>
+			<div class="thumbnailDesc"><p>${description}</p></div>
+				<div class="cardFlex">
+					<div class="thumbnailPrice"><p>Kr ${price}</p></div>
+				</div>
 		</div>
 		`;
 	}

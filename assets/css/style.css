@@ -117,10 +117,57 @@
 
 main {
   padding: 1% 2% 1% 2%;
+  background-color: rgba(177, 176, 176, 0.276);
 }
 
 h2 {
   font-weight: 100;
+}
+
+#bestsellercontainer {
+  width: 100%;
+}
+
+#bestsellerProducts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+
+.productCard {
+  background-color: white;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 5%;
+}
+.productCard img {
+  width: 100%;
+}
+.productCard .thumbnailDesc {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 50px;
+}
+.productCard .thumbnailDesc p {
+  font-weight: 100;
+}
+.productCard .thumnailPrice p {
+  font-weight: 500;
+}
+.productCard .cardFlex {
+  display: flex;
+  justify-content: flex-end;
+}
+.productCard h2 {
+  font-weight: 500;
+  height: 65px;
+  margin: 0;
 }
 
 body {
