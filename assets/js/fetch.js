@@ -20,7 +20,8 @@ fetch(endpoint)
 	.then((data) => productArray.push(...data))
 	.catch((error) => console.error(error))
 	.finally(() => {
-		productArray.map((product) => contentRender(product));
+		// productArray.map((product) => contentRender(product));
+		sortFunction(productArray);
 	});
 
 // //Specific product
@@ -32,8 +33,34 @@ fetch(endpoint)
 // 	.then((result) => result.json())
 // 	.then((data) => console.log(data));
 
-function contentRender(data) {
-	if (data.categoryId === 1) {
-		// console.log(data);
-	}
+//Sorts the most popular products from review amount
+function sortFunction(data) {
+	const sortedProducts = data.sort((p1, p2) =>
+		p1.reviewAmount < p2.reviewAmount
+			? 1
+			: p1.reviewAmount > p2.reviewAmount
+			? -1
+			: 0
+	);
+	//After the products have been sorted the new array gets sent to the next function
+	renderBestSellers(sortedProducts);
 }
+
+//This function renders 6 of the most popular products onto the page
+const renderBestSellers = (products) => {
+	//Grab container ID
+	const bestSellersContainer = document.getElementById("bestsellerProducts");
+	for (let i = 0; i < 6; i++) {
+		//Destructure assignment
+		let { name, image, description, price } = products[i];
+
+		bestSellersContainer.innerHTML += `
+		<div class="productCard">
+		<img src="${image}">
+		<h2>${name}</h2>
+		<div class="thumbnailDesc">${description}</div>
+		<div class="thumbnailPrice">Kr ${price}</div>
+		</div>
+		`;
+	}
+};

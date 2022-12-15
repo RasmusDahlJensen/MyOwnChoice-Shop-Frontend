@@ -115,6 +115,14 @@
           animation-timing-function: ease-out;
 }
 
+main {
+  padding: 1% 2% 1% 2%;
+}
+
+h2 {
+  font-weight: 100;
+}
+
 body {
   margin: 0;
 }
