@@ -130,6 +130,11 @@ h2 {
   font-weight: 100;
 }
 
+#highlightProduct {
+  display: flex;
+  justify-content: center;
+}
+
 #bestsellercontainer {
   width: 100%;
 }
@@ -187,6 +192,25 @@ footer h2,
 footer h3,
 footer p {
   color: white;
+}
+
+.some,
+.paymentMethods {
+  display: flex;
+  align-items: center;
+}
+.some img:hover,
+.paymentMethods img:hover {
+  transition: 200ms;
+  scale: 130%;
+}
+.some figure,
+.paymentMethods figure {
+  margin: 0 0 0 5%;
+}
+.some img,
+.paymentMethods img {
+  width: 30px;
 }
 
 body {

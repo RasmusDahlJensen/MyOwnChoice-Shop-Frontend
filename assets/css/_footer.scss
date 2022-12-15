@@ -10,3 +10,19 @@ footer {
 		color: white;
 	}
 }
+
+.some,
+.paymentMethods {
+	display: flex;
+	align-items: center;
+	img:hover {
+		transition: 200ms;
+		scale: (130%);
+	}
+	figure {
+		margin: 0 0 0 5%;
+	}
+	img {
+		width: 30px;
+	}
+}
