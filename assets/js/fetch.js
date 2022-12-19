@@ -22,7 +22,6 @@ fetch(endpoint)
 	.finally(() => {
 		// productArray.map((product) => contentRender(product));
 		sortFunction(productArray);
-		console.log(productArray[1].categoryId);
 	});
 
 //Picking out an entirely random product to highlight on the frontpage
