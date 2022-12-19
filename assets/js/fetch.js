@@ -33,7 +33,7 @@ fetch(productEndpoint)
 	.then((data) => highlightProduct(data));
 
 //highlight function
-let highlightProduct = (product) => {
+const highlightProduct = (product) => {
 	const container = document.getElementById("highlightProduct");
 	let { name, image, description, price } = product;
 

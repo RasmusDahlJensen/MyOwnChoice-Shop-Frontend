@@ -105,6 +105,10 @@
   font-family: "Roboto Condensed", sans;
   padding-top: 5px;
 }
+#categoryModal a {
+  color: white;
+  text-decoration: none;
+}
 
 .slideStart {
   -webkit-animation-name: toptobottom;
@@ -121,7 +125,7 @@ body {
 
 main {
   padding: 1% 2% 1% 2%;
-  background-color: rgb(218, 218, 218);
+  background-color: rgb(240, 240, 240);
   height: 100%;
   margin: 0;
 }
