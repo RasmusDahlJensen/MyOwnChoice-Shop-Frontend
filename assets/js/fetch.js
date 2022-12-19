@@ -22,6 +22,7 @@ fetch(endpoint)
 	.finally(() => {
 		// productArray.map((product) => contentRender(product));
 		sortFunction(productArray);
+		console.log(productArray[1].categoryId);
 	});
 
 //Picking out an entirely random product to highlight on the frontpage
@@ -35,10 +36,10 @@ fetch(productEndpoint)
 //highlight function
 const highlightProduct = (product) => {
 	const container = document.getElementById("highlightProduct");
-	let { name, image, description, price } = product;
+	let { name, image, description, price, categoryId } = product;
 
 	container.innerHTML += `
-	<div class="productCard">
+	<div class='productCard category${categoryId}'>
 	<img src="${image}">
 		<h2>${name}</h2>
 		<div class="thumbnailDesc"><p>${description}</p></div>
@@ -68,10 +69,10 @@ const renderBestSellers = (products) => {
 	const bestSellersContainer = document.getElementById("bestsellerProducts");
 	for (let i = 0; i < 6; i++) {
 		//Destructure assignment
-		let { name, image, description, price } = products[i];
+		let { name, image, description, price, categoryId } = products[i];
 
 		bestSellersContainer.innerHTML += `
-		<div class="productCard">
+		<div class='productCard category${categoryId}'>
 		<img src="${image}">
 			<h2>${name}</h2>
 			<div class="thumbnailDesc"><p>${description}</p></div>
